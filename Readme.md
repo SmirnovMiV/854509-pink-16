@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Смирнов](https://up.htmlacademy.ru/adaptive/16/user/854509).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лёмина](https://htmlacademy.ru/profile/id83874).
 
 ---
 
