@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт приложения Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css\style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип сайта Пинк">
+      <a class="page-header__logo-link" href="#">
+        <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта Пинк">
       </a>
-      <button class="page-header__main-nav-toggle" type="button">Открыть меню</button>
+      <button type="button" class="page-header__main-nav-toggle">Открыть меню</button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Html Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -31,44 +33,46 @@
     <main class="page-main">
       <h1 class="visually-hidden">Пинк - раскрась серые будни в розовый цвет!</h1>
       <section class="application-download">
-        <h2 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+        <h2 class="visually-hidden">Взгляните на жизнь иначе!</h2>
         <div class="application-download__image">
-          <img src="#" width="320" height="314" alt="Изображение руки с телефоном">
+          <img src="img\iphone-hand-mobile@1x.png" width="258" height="286" alt="Изображение руки с телефоном">
         </div>
         <div class="application-download__menu">
           <a href="#" class="application-download__link">Скачать приложение</a>
           <ul class="application-download__icons-list">
             <li class="application-download__icon">
-              <img src="#" width="47" height="56" alt="Иконка Эпл">
+              <img src="img\logo-apple.svg" width="47" height="56" alt="Иконка Эпл">
             </li>
             <li class="application-download__icon">
-              <img src="#" width="43" height="47" alt="Иконка Андройд">
+              <img src="img\logo-android.svg" width="43" height="47" alt="Иконка Андройд">
             </li>
             <li class="application-download__icon">
-              <img src="#" width="44" height="41" alt="Иконка Виндовс">
+              <img src="img\logo-microsoft.svg" width="44" height="41" alt="Иконка Виндовс">
             </li>
           </ul>
-          <p class="application-download__discription">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="application-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
-      <section class="page-main__features">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
-        <ul class="features-list">
-          <li class="features-list__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <section class="features">
+        <div class="features__message">
+          <p class="features__message-text">Устали от серости мегаполиса?</p>
+          <p class="features__message-text">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="features-list__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="features-list__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="#" width="157" height="320" alt="Картинка смайлика на экране телефона">
+        <img src="img\iphone-screen-mobile@1x.png" width="157" height="320" alt="Картинка смайлика на экране телефона">
       </section>
     </main>
   </body>
