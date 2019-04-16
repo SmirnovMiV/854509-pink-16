@@ -29,3 +29,34 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.wrapper-content(@width) {
+  width: @width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerman() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    /* Временно для сетки */
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    /* Временно для сетки */
+    width: 1200px;
+  }
+}

@@ -1,5 +1,41 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: 285px;
+  .centerman();
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    /* Временно для сетки */
+    height: 125px;
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    /* Временно для сетки */
+    min-height: 195px;
+    width: 1200px;
+  }
+}
+
+.page-footer--display-none {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer--display-none {
+    /* Временно для сетки */
+    display: flex;
+  }
 }
 
 .page-footer__copyright {
