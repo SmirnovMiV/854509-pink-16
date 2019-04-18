@@ -3,119 +3,141 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт приложения Пинк-Фотографии</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css\style.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css\outlines.css" type="text/css" rel="stylesheet"> -->
   </head>
   <body class="inner-page">
     <header class="page-header">
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта Пинк">
-      </a>
-      <button type="button" class="page-header__main-nav-toggle">Открыть меню</button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--top-menu">
+              <div class="main-nav__item-wrapper">
+                <a class="main-nav__logo-link" href="#">
+                  <div class="main-nav__logo-image" alt="Логотип сайта Пинк"></div>
+                </a>
+                <button type="button" class="main-nav__toggle">Открыть меню</button>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <section class="photo">
-        <h2 class="photo__title">Фотографии пользователей</h2>
-        <div  class="photo__message">
-          <p>Взгляните на фотографии, которые выкладывают пользователи!</p>
-          <p>Видите, как не хватает ваших?</p>
-        </div>
+        <h2 class="photo__title"><span class="photo__title--wrapper">Фотографии пользователей</span></h2>
+        <p class="photo__message"><span class="photo__message--wrapper">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</span></p>
         <ul class="photo__list">
-          <li class="photo__item">
+          <li class="photo__item photo__item--panorama-plate">
             <p class="photo__panorama-plate">Панорама дня</p>
-            <img src="img\panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+            <div class="photo__panorama-image" alt="Панорама дня"></div>
+            <div class="photo__data-panorama">
+              <div class="photo__data-panorama-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Анна </cite><span class="photo__cite-time">(5 минут назад)</span></p>
+                <blockquote class="photo__cite-blockquote photo__cite-blockquote--order">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+                <p class="photo__like photo__like--margin">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 215</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <div class="photo__item-wrapper">
+          <li class="photo__item">
+            <div class="photo__image photo__image--car" alt="Фотография пользователя"></div>
             <div class="photo__data">
-              <p><cite class="photo__cite">Анна</cite><span class="photo__cite-time">(5 минут назад)</span></p>
-              <blockquote>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 215</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Левон </cite><span class="photo__cite-time">(5 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 356</span>
+                </p>
+              </div>
             </div>
           </li>
           <li class="photo__item">
-            <img src="img\photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+            <img class="photo__image" src="img\photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
             <div class="photo__data">
-              <p><cite class="photo__cite">Левон</cite><span class="photo__cite-time">(5 часов назад)</span></p>
-              <blockquote>Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 356</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Антон </cite><span class="photo__cite-time">(12 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Соседи будут рады!</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 666</span>
+                </p>
+              </div>
             </div>
           </li>
           <li class="photo__item">
-            <img src="img\photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+            <img class="photo__image" src="img\photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
             <div class="photo__data">
-              <p><cite class="photo__cite">Антон</cite><span class="photo__cite-time">(12 часов назад)</span></p>
-              <blockquote>Соседи будут рады!</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 666</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Борис </cite><span class="photo__cite-time">(20 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 215</span>
+                </p>
+              </div>
             </div>
           </li>
           <li class="photo__item">
-            <img src="img\photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+            <img class="photo__image" src="img\photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
             <div class="photo__data">
-              <p><cite class="photo__cite">Борис</cite><span class="photo__cite-time">(20 часов назад)</span></p>
-              <blockquote>Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 215</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Сергей </cite><span class="photo__cite-time">(25 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Самая кубанская в мире!</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 4</span>
+                </p>
+              </div>
             </div>
           </li>
           <li class="photo__item">
-            <img src="img\photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+            <img class="photo__image" src="img\photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
             <div class="photo__data">
-              <p><cite class="photo__cite">Сергей</cite><span class="photo__cite-time">(25 часов назад)</span></p>
-              <blockquote>Самая кубанская в мире!</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 4</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Максим </cite><span class="photo__cite-time">(40 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Где снег-то?</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 150</span>
+                </p>
+              </div>
             </div>
           </li>
           <li class="photo__item">
-            <img src="img\photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+            <img class="photo__image" src="img\photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
             <div class="photo__data">
-              <p><cite class="photo__cite">Максим</cite><span class="photo__cite-time">(40 часов назад)</span></p>
-              <blockquote>Где снег-то?</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 150</span>
-              </p>
+              <div class="photo__data-wrapper">
+                <p class="photo__cite-block"><cite class="photo__cite">Надежда </cite><span class="photo__cite-time">(45 часов назад)</span></p>
+                <blockquote class="photo__cite-blockquote">Всем GM и взаимные лайки!</blockquote>
+                <p class="photo__like">
+                  <button type="button" class="photo__like-button">Лайк</button>
+                  <span class="photo__like-count">Нравится: 2560</span>
+                </p>
+              </div>
             </div>
           </li>
-          <li class="photo__item">
-            <img src="img\photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
-            <div class="photo__data">
-              <p><cite class="photo__cite">Надежда</cite><span class="photo__cite-time">(45 часов назад)</span></p>
-              <blockquote>Всем GM и взаимные лайки!</blockquote>
-              <p class="photo__like">
-                <button type="button" class="photo__like-button">Лайк</button>
-                <span class="photo__like-count">Нравится: 2560</span>
-              </p>
-            </div>
-          </li>
+        </div>
         </ul>
       </section>
     </main>

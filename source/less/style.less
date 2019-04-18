@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic");
+@import "variables.less";
+@import "mixins.less";
 @import "support.less";
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -19,3 +22,4 @@ body {
 @import "page-footer.less";
 @import "social.less";
 @import "contest.less";
+@import "chronometer.less";

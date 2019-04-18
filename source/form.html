@@ -3,36 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт приложения Пинк-Конкурс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css\style.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css\outlines.css" type="text/css" rel="stylesheet"> -->
   </head>
   <body class="inner-page">
     <header class="page-header">
-      <a class="page-header__logo-link" href="#">
-        <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип сайта Пинк">
-      </a>
-      <button type="button" class="page-header__main-nav-toggle">Открыть меню</button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--active">
-            <a class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--top-menu">
+              <div class="main-nav__item-wrapper">
+                <a class="main-nav__logo-link" href="#">
+                  <div class="main-nav__logo-image" alt="Логотип сайта Пинк"></div>
+                </a>
+                <button type="button" class="main-nav__toggle">Открыть меню</button>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <section class="contest">
-        <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="contest__title">
+          <span class="contest__title-wrapper">Конкурс на самое безбашенное путешествие с Пинк</span>
+          </h2>
       </section>
     </main>
     <footer class="page-footer">
