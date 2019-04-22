@@ -6,13 +6,29 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 19px;
+  padding-top: 13px;
   font-size: 96px;
   font-weight: 700;
   line-height: 149.47px;
   color: #d22856;
   background-color: #ffffff;
 }
+
+@media (min-width: @desktop-width) {
+  .chronometer {
+    transform: scale(1.26);
+    margin-left: 30px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+  }
+}
+// @media (min-width: @desktop-width) {
+//   .chronometer {
+//     width: 300px;
+//     height: 320px;
+//     padding-top: 0;
+//   }
+// }
 
 .chronometer__casing {
   position: absolute;
@@ -23,4 +39,5 @@
 .chronometer__dial {
   position: absolute;
   left: 18px;
+  top: 55px;
 }

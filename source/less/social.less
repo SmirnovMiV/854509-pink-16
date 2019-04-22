@@ -1,6 +1,22 @@
 .social {
+  width: 180px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   .reset-list();
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-top: 5px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin-right: -15px;
+  }
 }
 
 .social__link {

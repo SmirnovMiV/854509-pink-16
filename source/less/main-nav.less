@@ -64,6 +64,8 @@
     background-color: transparent;
     min-height: 110px;
     width: 150px;
+    border-bottom: none;
+    box-shadow: none;
   }
 
   .main-nav__item:nth-child(n+1) {
@@ -121,6 +123,21 @@
   .main-nav__logo-image {
     /* Временно для сетки */
     background-image: url("../img/logo-pink-white-desktop.svg");
+  }
+}
+
+.main-nav button {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav button {
+    margin-top: 17px;
   }
 }
 

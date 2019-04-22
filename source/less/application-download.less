@@ -79,6 +79,8 @@
   width: 320px;
   min-height: 270px;
   padding-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
 
@@ -86,7 +88,7 @@
   .application-download__menu {
     /* Временно для сетки */
     min-height: 685px;
-    min-width: 340px;
+    width: 660px;
   }
 }
 
@@ -94,7 +96,7 @@
   .application-download__menu {
     /* Временно для сетки */
     min-height: 853px;
-    min-width: 340px;
+    width: 940px;
   }
 }
 
@@ -107,6 +109,15 @@
 @media (min-width: @tablet-width) {
   .application-download__menu-wrapper {
     width: 300px;
+    padding-top: 95px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-download__menu-wrapper {
+    padding-top: 148px;
+    margin-left: 0;
   }
 }
 
@@ -127,19 +138,14 @@
   }
 }
 
-.application-download__icons-list {
-  width: 205px;
-  .reset-list();
-  .centerman();
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media (min-width: @tablet-width) {
-  .application-download__icons-list {
-    margin-bottom: 30px;
+@media (min-width: @desktop-width) {
+  .application-download__menu-heading {
+    display: block;
+    width: 240px;
+    margin-left: 30px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 50px;
   }
 }
 
@@ -152,11 +158,12 @@
   width: 280px;
   min-height: 55px;
   margin-bottom: 32px;
+  padding-bottom: 3px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   border: solid 3px #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #ffffff;
   background-color: #1d2631;
   box-sizing: border-box;
@@ -167,6 +174,36 @@
     width: 300px;
     margin-bottom: 46px;
     background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-download__link {
+    font-size: 21px;
+    margin-bottom: 70px;
+  }
+}
+
+.application-download__icons-list {
+  width: 205px;
+  .reset-list();
+  .centerman();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+@media (min-width: @tablet-width) {
+  .application-download__icons-list {
+    margin-bottom: 30px;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-download__icons-list {
+    margin-bottom: 45px;
   }
 }
 
