@@ -17,7 +17,11 @@
             <li class="main-nav__item main-nav__item--top-menu">
               <div class="main-nav__item-wrapper">
                 <a class="main-nav__logo-link" href="#">
-                  <div class="main-nav__logo-image" alt="Логотип сайта Пинк"></div>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
+                  </picture>
                 </a>
                 <button type="button" class="main-nav__toggle">Открыть меню</button>
               </div>
@@ -49,7 +53,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          </picture>
         </a>
         <ul class="page-footer__social social">
           <li>

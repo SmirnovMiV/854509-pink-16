@@ -17,7 +17,11 @@
             <li class="main-nav__item main-nav__item--top-menu">
               <div class="main-nav__item-wrapper">
                 <a class="main-nav__logo-link" href="#">
-                  <div class="main-nav__logo-image" alt="Логотип сайта Пинк"></div>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
+                  </picture>
                 </a>
                 <button type="button" class="main-nav__toggle">Открыть меню</button>
               </div>
@@ -46,7 +50,11 @@
         <ul class="photo__list">
           <li class="photo__item photo__item--panorama-plate">
             <p class="photo__panorama-plate">Панорама дня</p>
-            <img class="photo__panorama-image" aria-label="Панорама дня">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
             <div class="photo__data-panorama">
               <div class="photo__data-panorama-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Анна </cite><span class="photo__cite-time">(5 минут назад)</span></p>
@@ -66,7 +74,11 @@
           </li>
           <div class="photo__item-wrapper">
           <li class="photo__item">
-            <img class="photo__image photo__image--car" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя: белый автомобиль">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Левон </cite><span class="photo__cite-time">(5 часов назад)</span></p>
@@ -85,7 +97,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image photo__image--drumset" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--drumset" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя: барабанная установка">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Антон </cite><span class="photo__cite-time">(12 часов назад)</span></p>
@@ -104,7 +120,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image photo__image--window" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--window" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя: вид из окна небоскрёба">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Борис </cite><span class="photo__cite-time">(20 часов назад)</span></p>
@@ -123,7 +143,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image photo__image--fair" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--fair" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя: кубанская бахча">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Сергей </cite><span class="photo__cite-time">(25 часов назад)</span></p>
@@ -142,7 +166,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image photo__image--pov" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--pov" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя: вид с горы">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Максим </cite><span class="photo__cite-time">(40 часов назад)</span></p>
@@ -161,7 +189,11 @@
             </div>
           </li>
           <li class="photo__item">
-            <img class="photo__image photo__image--wing" aria-label="Фотография пользователя">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo__image photo__image--wing" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя: вид на крыло из окна самолёта">
+            </picture>
             <div class="photo__data">
               <div class="photo__data-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Надежда </cite><span class="photo__cite-time">(45 часов назад)</span></p>
@@ -187,7 +219,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          </picture>
         </a>
         <ul class="page-footer__social social">
           <li>

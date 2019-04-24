@@ -17,7 +17,11 @@
             <li class="main-nav__item main-nav__item--top-menu">
               <div class="main-nav__item-wrapper">
                 <a class="main-nav__logo-link" href="#">
-                  <div class="main-nav__logo-image" aria-label="Логотип сайта Пинк"></div>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
+                  </picture>
                 </a>
                 <button type="button" class="main-nav__toggle">Открыть меню</button>
               </div>
@@ -43,7 +47,7 @@
       <h1 class="visually-hidden">Пинк - раскрась серые будни в розовый цвет!</h1>
       <section class="application-download">
         <div class="application-download__image">
-          <img class="application-download__image-hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Изображение руки с телефоном">
+          <img class="application-download__image-hand" src="img/iphone-hand-mobile@1x.png"  srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Изображение руки с телефоном">
         </div>
         <div class="application-download__menu">
           <div class="application-download__menu-wrapper">
@@ -51,7 +55,7 @@
             <a href="#" class="application-download__link">Скачать приложение</a>
             <ul class="application-download__icons-list">
               <li class="application-download__icon">
-                <img src="img/ogo-apple.svg" width="46" height="56" alt="Иконка Эпл">
+                <img src="img/logo-apple.svg" width="46" height="56" alt="Иконка Эпл">
               </li>
               <li class="application-download__icon">
                 <img src="img/logo-android.svg" width="43" height="47" alt="Иконка Андройд">
@@ -90,7 +94,7 @@
               </div>
             </li>
           </div>
-          <div class="features__image" aria-label="Картинка смайлика на экране телефона"></div>
+          <img class="features__image" aria-label="Картинка смайлика на экране телефона">
         </ul>
         <div class="features__research">
           <div class="features__research-wrapper">
@@ -115,7 +119,10 @@
     <footer class="page-footer page-footer--hide">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          </picture>
         </a>
         <ul class="page-footer__social social">
           <li>
