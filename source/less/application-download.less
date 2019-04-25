@@ -27,15 +27,15 @@
 }
 
 .application-download__image {
-  position: relative;
   width: 320px;
   min-height: 462px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px 462px;
-  }
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px 286px, 320px 462px;  }
 }
 
 @media (min-width: @tablet-width) {
@@ -73,20 +73,6 @@
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
       background-size: 1050px 645px, 2560px 853px;
     }
-  }
-}
-
-.application-download__image-hand {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: @tablet-width) {
-  .application-download__image-hand {
-    display: none;
   }
 }
 
