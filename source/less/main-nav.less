@@ -1,12 +1,12 @@
 .main-nav {
   /* Временно для сетки */
-  min-height: 325px;
+  // min-height: 325px;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     /* Временно для сетки */
-    min-height: 367px;
+    // min-height: 367px;
   }
 }
 
@@ -51,10 +51,6 @@
   z-index: 1;
 }
 
-.main-nav__item--hide {
-  display: none;
-}
-
 .main-nav__item:last-child {
   border-bottom: none;
 }
@@ -90,12 +86,12 @@
   }
 }
 
-.main-nav__item--top-menu {
+.main-nav__item--top {
   min-height: 69px;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__item--top-menu {
+  .main-nav__item--top {
     /* Временно для сетки */
     min-height: 110px;
   }
@@ -167,5 +163,29 @@
     font-weight: 400;
     text-transform: none;
     background-color: transparent;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-nav__list--menu-close li:first-child {
+    min-height: 66px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .main-nav__list--menu-close li:first-child {
+      min-height: 110px;
+    }
+  }
+
+  .main-nav__list--menu-close li:not(:first-child) {
+    display: none;
+  }
+
+  .main-nav__list--menu-close .main-nav__toggle {
+    width: 50px;
+    height: 24px;
+    background-image: url("../img/icon-menu-burger.svg");
   }
 }

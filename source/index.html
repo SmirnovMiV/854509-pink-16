@@ -38,7 +38,7 @@
       <div class="wrapper">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--top-menu">
+            <li class="main-nav__item main-nav__item--top main-nav__item--top-menu">
               <div class="main-nav__item-wrapper">
                 <a class="main-nav__logo-link" href="#">
                   <picture>
@@ -167,5 +167,21 @@
         </p>
       </div>
     </footer>
+    <script type="text/javascript">
+      var navMain = document.querySelector('.main-nav__list');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.add('main-nav__list--menu-close');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav__list--menu-close')) {
+          navMain.classList.remove('main-nav__list--menu-close');
+          navMain.classList.add('main-nav__list--menu-opened');
+        } else {
+          navMain.classList.add('main-nav__list--menu-close');
+          navMain.classList.remove('main-nav__list--menu-opened');
+        }
+      });
+    </script>
   </body>
 </html>
