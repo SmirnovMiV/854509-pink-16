@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт приложения Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <!-- <link href="css\outlines.css" type="text/css" rel="stylesheet"> -->
   </head>
@@ -32,6 +34,12 @@
       <symbol viewBox="22.5 69.048 253 253" id="chronometer-dial">
         <path fill="#d22856" d="M149 69.048c-69.864 0-126.5 56.636-126.5 126.5s56.636 126.5 126.5 126.5 126.5-56.636 126.5-126.5c0-69.863-56.636-126.5-126.5-126.5zm0 237.216c-60.844 0-110.167-49.323-110.167-110.167S88.156 85.93 149 85.93c60.843 0 110.167 49.323 110.167 110.167S209.843 306.264 149 306.264z"/>
       </symbol>
+      <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+        <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
+      </symbol>
+      <symbol id="icon-no">
+        <path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
+      </symbol>
     </svg>
 
     <header class="page-header">
@@ -47,7 +55,7 @@
                     <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
                   </picture>
                 </a>
-                <button type="button" class="main-nav__toggle">Открыть меню</button>
+                <button type="button" class="main-nav__toggle" aria-label="Переключатель состояния меню">Открыть меню</button>
               </div>
             </li>
             <li class="main-nav__item main-nav__item--active">
@@ -74,16 +82,22 @@
         <div class="application-download__menu">
           <div class="application-download__menu-wrapper">
             <h2 class="application-download__menu-heading">Взгляните на жизнь иначе!</h2>
-            <a href="#" class="application-download__link">Скачать приложение</a>
+            <a href="https://itunes.apple.com/ru/store" class="application-download__link" target="blank">Скачать приложение</a>
             <ul class="application-download__icons-list">
               <li class="application-download__icon">
-                <img src="img/logo-apple.svg" width="46" height="56" alt="Иконка Эпл">
+                <a href="https://itunes.apple.com/ru/store" target="blank" aria-label="Открыть Apple Store">
+                  <img src="img/logo-apple.svg" width="46" height="56" alt="Иконка Эпл">
+                </a>
               </li>
               <li class="application-download__icon">
-                <img src="img/logo-android.svg" width="43" height="47" alt="Иконка Андройд">
+                <a href="https://play.google.com/store" target="blank"  aria-label="Открыть Android Market">
+                  <img src="img/logo-android.svg" width="43" height="47" alt="Иконка Андройд">
+                </a>
               </li>
               <li class="application-download__icon">
-                <img src="img/logo-microsoft.svg" width="44" height="43" alt="Иконка Виндовс">
+                <a href="https://www.microsoft.com/ru-RU/store/apps" target="blank"  aria-label="Открыть Windows Store">
+                  <img src="img/logo-microsoft.svg" width="44" height="43" alt="Иконка Виндовс">
+                </a>
               </li>
             </ul>
             <p class="application-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -131,6 +145,62 @@
             </div>
           </div>
         </div>
+        <div class="features__slider">
+          <div class="features__slider-wrapper">
+            <cite>Николай Петров<span>25 лет, водитель трамвая</span></cite>
+            <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            <div class="features__slider-buttons">
+              <button class="features__slider-button features__slider-button--active" type="button" name="button-1"></button>
+              <button type="button" name="button-2"></button>
+              <button type="button" name="button-3"></button>
+            </div>
+            <div class="features__slider-arrows">
+              <button type="button" name="arrow-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path fill="#283645" d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></svg>
+              </button>
+              <button type="button" name="arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path fill="#283645" d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price-list">
+        <div class="price-list__table">
+          <div class="price-list__content">
+            <div class="price-list__column price-list__column-1"></div>
+            <div class="price-list__column price-list__column-2"></div>
+            <div class="price-list__column price-list__column-3"></div>
+            <div class="price-list__column price-list__column-4"></div>
+            <ul class="price-list__column-caption">
+              <li></li>
+              <li>База<span>1,99 USD</span></li>
+              <li class="price-list__column-caption price-list__column-caption--hit">Стандарт<span>3,99 USD</span></li>
+              <li>Анлим<span>9,99 USD</span></li>
+            </ul>
+            <div class="price-list__content-group">
+              <ul>
+                <li>Розовый фильтр</li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+              <ul>
+                <li>Смайлики</li>
+                <li><svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+              <ul>
+                <li>Комментарии</li>
+                <li><svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></li>
+                <li><svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></use></svg></li>
+                <li><svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
 
@@ -161,7 +231,7 @@
         </ul>
         <p class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на страницу курса HTML и CSS, уровень 2">
             <svg width="26.943" height="34.09"><use xlink:href="#logo-Academy"></use></svg>
           </a>
         </p>

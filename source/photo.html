@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт приложения Пинк-Фотографии</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <!-- <link href="css\outlines.css" type="text/css" rel="stylesheet"> -->
   </head>
@@ -34,14 +36,14 @@
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--top">
               <div class="main-nav__item-wrapper">
-                <a class="main-nav__logo-link" href="#">
+                <a class="main-nav__logo-link" href="index.html"  aria-label="Перейти на главную страницу сайта Пинк">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
                     <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                     <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
                   </picture>
                 </a>
-                <button type="button" class="main-nav__toggle">Открыть меню</button>
+                <button type="button" class="main-nav__toggle" aria-label="Переключатель состояния меню">Открыть меню</button>
               </div>
             </li>
             <li class="main-nav__item">
@@ -68,15 +70,17 @@
         <ul class="photo__list">
           <li class="photo__item photo__item--panorama-plate">
             <p class="photo__panorama-plate">Панорама дня</p>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/webp/panorama-mobile@1x.webp 1x, img/webp/panorama-mobile@2x.webp 2x">
+            <a href="#" aria-label="Открытие полноразмерного изображения">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/panorama-mobile@1x.webp 1x, img/webp/panorama-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
-            </picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
+            </a>
             <div class="photo__data-panorama">
               <div class="photo__data-panorama-wrapper">
                 <p class="photo__cite-block"><cite class="photo__cite">Анна </cite><span class="photo__cite-time">(5 минут назад)</span></p>
@@ -92,15 +96,17 @@
           </li>
           <li class="photo__item-wrapper">
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-car-desktop@1x.webp 1x, img/webp/photo-car-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-car-tablet@1x.webp 1x, img/webp/photo-car-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-car-mobile@1x.webp 1x, img/webp/photo-car-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-car-desktop@1x.webp 1x, img/webp/photo-car-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-car-tablet@1x.webp 1x, img/webp/photo-car-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-car-mobile@1x.webp 1x, img/webp/photo-car-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя: белый автомобиль">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--car" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя: белый автомобиль">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Левон </cite><span class="photo__cite-time">(5 часов назад)</span></p>
@@ -115,15 +121,17 @@
               </div>
             </div>
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-drumset-desktop@1x.webp 1x, img/webp/photo-drumset-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-drumset-tablet@1x.webp 1x, img/webp/photo-drumset-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-drumset-mobile@1x.webp 1x, img/webp/photo-drumset-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-drumset-desktop@1x.webp 1x, img/webp/photo-drumset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-drumset-tablet@1x.webp 1x, img/webp/photo-drumset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-drumset-mobile@1x.webp 1x, img/webp/photo-drumset-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--drumset" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя: барабанная установка">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--drumset" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя: барабанная установка">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Антон </cite><span class="photo__cite-time">(12 часов назад)</span></p>
@@ -138,15 +146,17 @@
               </div>
             </div>
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-window-desktop@1x.webp 1x, img/webp/photo-window-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-window-tablet@1x.webp 1x, img/webp/photo-window-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-window-mobile@1x.webp 1x, img/webp/photo-window-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-window-desktop@1x.webp 1x, img/webp/photo-window-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-window-tablet@1x.webp 1x, img/webp/photo-window-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-window-mobile@1x.webp 1x, img/webp/photo-window-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--window" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя: вид из окна небоскрёба">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--window" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя: вид из окна небоскрёба">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Борис </cite><span class="photo__cite-time">(20 часов назад)</span></p>
@@ -161,15 +171,17 @@
               </div>
             </div>
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-fair-desktop@1x.webp 1x, img/webp/photo-fair-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-fair-tablet@1x.webp 1x, img/webp/photo-fair-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-fair-mobile@1x.webp 1x, img/webp/photo-fair-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-fair-desktop@1x.webp 1x, img/webp/photo-fair-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-fair-tablet@1x.webp 1x, img/webp/photo-fair-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-fair-mobile@1x.webp 1x, img/webp/photo-fair-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--fair" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя: кубанская бахча">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--fair" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя: кубанская бахча">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Сергей </cite><span class="photo__cite-time">(25 часов назад)</span></p>
@@ -184,15 +196,17 @@
               </div>
             </div>
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-pov-desktop@1x.webp 1x, img/webp/photo-pov-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-pov-tablet@1x.webp 1x, img/webp/photo-pov-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-pov-mobile@1x.webp 1x, img/webp/photo-pov-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-pov-desktop@1x.webp 1x, img/webp/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-pov-tablet@1x.webp 1x, img/webp/photo-pov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-pov-mobile@1x.webp 1x, img/webp/photo-pov-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--pov" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя: вид с горы">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--pov" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя: вид с горы">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Максим </cite><span class="photo__cite-time">(40 часов назад)</span></p>
@@ -207,15 +221,17 @@
               </div>
             </div>
             <div class="photo__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-wing-desktop@1x.webp 1x, img/webp/photo-wing-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-wing-tablet@1x.webp 1x, img/webp/photo-wing-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/photo-wing-mobile@1x.webp 1x, img/webp/photo-wing-mobile@2x.webp 2x">
+              <a href="#" aria-label="Открытие полноразмерного изображения">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/photo-wing-desktop@1x.webp 1x, img/webp/photo-wing-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/webp/photo-wing-tablet@1x.webp 1x, img/webp/photo-wing-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/photo-wing-mobile@1x.webp 1x, img/webp/photo-wing-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img class="photo__image photo__image--wing" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя: вид на крыло из окна самолёта">
-              </picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="photo__image photo__image--wing" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя: вид на крыло из окна самолёта">
+                </picture>
+              </a>
               <div class="photo__data">
                 <div class="photo__data-wrapper">
                   <p class="photo__cite-block"><cite class="photo__cite">Надежда </cite><span class="photo__cite-time">(45 часов назад)</span></p>
@@ -236,7 +252,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link" href="#">
+        <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную страницу сайта Пинк">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
             <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
@@ -261,7 +277,7 @@
         </ul>
         <p class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на страницу курса HTML и CSS, уровень 2">
             <svg width="26.943" height="34.09"><use xlink:href="#logo-Academy"></use></svg>
           </a>
         </p>
