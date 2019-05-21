@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 235px;
+  min-height: 200px;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -97,12 +97,17 @@
 .features__list {
   display: flex;
   flex-direction: column;
+  padding-top: 35px;
   background-color: #f2f2f2;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%2294.074%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M1200%200H0v94.074z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size:  320px 35px;
 }
 
 @media (min-width: @tablet-width) {
   .features__list {
     width: 660px;
+    padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
@@ -114,6 +119,7 @@
     align-content: flex-start;
     margin-left: auto;
     margin-right: auto;
+    background-size:  660px 50px;
   }
 }
 
@@ -123,6 +129,7 @@
     min-height: 610px;
     margin-top: -100px;
     width: 1200px;
+    background-size:  1200px 90px;
   }
 }
 
@@ -484,9 +491,6 @@
   .features__slider-wrapper {
     position: relative;
     width: 940px;
-    background-image: url("../img/icon-review-arrow-left.svg"), url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: left 200px, right 200px;
   }
 }
 
@@ -573,37 +577,6 @@
   .features__slider-buttons {
     display: none;
   }
-}
-
-.features__slider-buttons button {
-  width: 6px;
-  height: 6px;
-  padding: 0;
-  margin-right: 15px;
-  border: none;
-  border-radius: 50%;
-  background-color: #283645;
-  opacity: 0.3;
-  cursor: pointer;
-}
-
-.features__slider-buttons button:focus,
-.features__slider-buttons button:hover {
-  opacity: 0.6;
-}
-
-.features__slider-buttons button:active {
-  opacity: 0.1;
-}
-
-.features__slider-buttons .features__slider-button--active {
-  opacity: 1;
-  background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645;
-}
-
-.features__slider-buttons button:last-child {
-  margin-right: 0;
 }
 
 .features__slider-arrows {

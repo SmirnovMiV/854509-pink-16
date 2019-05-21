@@ -1,0 +1,332 @@
+.photo-post {
+  width: 320px;
+  .centerman();
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-color: #ffffff;
+  }
+}
+
+.photo-post__intro {
+  padding: 0;
+  margin: 0;
+  .centerman();
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+  padding-bottom: 41px;
+  text-align: center;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 6px;
+    padding-bottom: 65px;
+  }
+}
+
+.photo-post__form-wrapper {
+  display: flex;
+  width: 280px;
+  .centerman();
+  padding-top: 20px;
+  padding-bottom: 31px;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 27px;
+    margin-bottom: 23px;
+    width: 620px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    background-color: #f2f2f2;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 85px;
+    box-sizing: border-box;
+  }
+}
+
+.photo-post__form button {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border: none;
+  background-color: transparent;
+}
+
+button.photo-post__editor-tool {
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+}
+
+.photo-post__editor-tool svg {
+  fill: #283645;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+
+.photo-post__editor-tool--active svg {
+  fill: #d22856;
+  opacity: 1;
+}
+
+@media (max-width: 659px) {
+  .photo-post__editor-tool:not(.photo-post__editor-tool--active):focus svg,
+  .photo-post__editor-tool:not(.photo-post__editor-tool--active):hover svg {
+    opacity: 0.5;
+  }
+}
+
+.photo-post__editor-tool--crop svg {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+    margin-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.photo-post__editor-tool--fill svg {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.photo-post__editor-tool--contrast svg {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.photo-post__editor {
+  display: flex;
+  width: 240px;
+  .centerman();
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 260px;
+    min-height: 163px;
+    margin-top: 9px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 410px;
+    min-height: 180px;
+    margin-top: 0;
+    padding-right: 30px;
+    padding-left: 0;
+    margin-bottom: 165px;
+    box-sizing: border-box;
+  }
+}
+
+.photo-post__slider {
+  display: none;
+  position: relative;
+  width: 205px;
+  height: 2px;
+  background-color: #000000;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+}
+
+.photo-post__slider button {
+  position: absolute;
+  top: -4px;
+  right: 36px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #d22856;
+  box-sizing: border-box;
+}
+
+.photo-post__slider button:active {
+  background-color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  button.photo-post__slider-button--crop {
+    right: 47px;
+  }
+
+  button.photo-post__slider-button--fill {
+    left: 27px;
+  }
+
+  button.photo-post__slider-button--contrast {
+    right: 97px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  button.photo-post__slider-button--crop {
+    left: 73px;
+  }
+
+  button.photo-post__slider-button--fill {
+    left: 249px;
+  }
+
+  button.photo-post__slider-button--contrast {
+    right: 115px;
+  }
+}
+
+.photo-post__slider-joint {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+  .centerman();
+  margin-top: 40px;
+  margin-bottom: 73px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photo-post__slider-joint button {
+  position: absolute;
+  top: -4px;
+  right: 36px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #d22856;
+  box-sizing: border-box;
+}
+
+.photo-post__slider-joint button:active {
+  background-color: #d22856;
+}
+
+button.photo-post__editor-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  min-height: 55px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  border: solid 3px #d22856;
+  border-radius: 30px;
+  color: #d22856;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    width: 183px;
+    margin-bottom: 0;
+  }
+}
+
+.photo-post__editor-button[type="submit"]:focus,
+.photo-post__editor-button[type="submit"]:hover {
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.photo-post__editor-button[type="submit"]:active {
+  color: rgba(255, 255, 255, 0.3);;
+}
+
+button.photo-post__editor-reset {
+  opacity: 0.1;
+  color: #283645;
+  border: 3px solid #283645;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: 40px;
+  }
+}
+
+button.photo-post__editor-reset:focus,
+button.photo-post__editor-reset:hover {
+  opacity: 0.3;
+}
+
+button.photo-post__editor-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #283645;
+}
