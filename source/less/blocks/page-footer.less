@@ -7,17 +7,15 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    /* Временно для сетки */
     width: 660px;
-    min-height: 125px;
+    min-height: 120px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    /* Временно для сетки */
     width: 1200px;
-    min-height: 195px;
+    min-height: 190px;
   }
 }
 
@@ -33,7 +31,6 @@
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     width: 620px;
-    padding-top: 23px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -43,28 +40,26 @@
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
     width: 940px;
-    padding-top: 51px;
   }
 }
 
 .page-footer__logo-link {
   margin-top: 41px;
   margin-bottom: 32px;
-}
 
-@media (min-width: @tablet-width) {
-  .page-footer__logo-link {
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
-.page-footer--hide {
-  display: none;
+.page-footer__logo-link:active {
+  opacity: 0.3;
 }
 
-@media (min-width: @tablet-width) {
-  .page-footer--hide {
-    /* Временно для сетки */
+.page-footer--hide {
+  display: none;
+
+  @media (min-width: @tablet-width) {
     display: flex;
   }
 }
@@ -101,4 +96,17 @@
 .page-footer__copyright-link {
   display: block;
   height: 34px;
+}
+
+.page-footer__copyright-link svg {
+  fill: #d22856;
+}
+
+.page-footer__copyright-link:focus svg,
+.page-footer__copyright-link:hover svg {
+  fill: #283645;
+}
+
+.page-footer__copyright-link:active svg {
+  opacity: 0.3;
 }

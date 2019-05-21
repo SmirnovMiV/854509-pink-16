@@ -1,6 +1,5 @@
 .photo {
   width: 320px;
-  min-height: 2720px;
   margin-top: -67px;
   z-index: -1;
   .centerman();
@@ -8,8 +7,6 @@
 
 @media (min-width: @tablet-width) {
   .photo {
-    /* Временно для сетки */
-    min-height: 2753px;
     margin-top: -110px;
     width: 660px;
   }
@@ -17,8 +14,6 @@
 
 @media (min-width: @desktop-width) {
   .photo {
-    /* Временно для сетки */
-    min-height: 3153px;
     margin-top: -110px;
     width: 1200px;
   }
@@ -223,6 +218,7 @@
   .photo__panorama-image {
     width: 660px;
     height: 509px;
+    object-fit: cover;
   }
 }
 
