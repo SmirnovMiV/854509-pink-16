@@ -9,17 +9,15 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    /* Временно для сетки */
-    min-height: 1100px;
     width: 660px;
+    min-height: 1100px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features {
-    /* Временно для сетки */
+    width: 100%;
     min-height: 1370px;
-    width: 1200px;
   }
 }
 
@@ -37,7 +35,6 @@
 
 @media (min-width: @tablet-width) {
   .features__message {
-    /* Временно для сетки */
     min-height: 220px;
     font-size: 40px;
   }
@@ -45,9 +42,10 @@
 
 @media (min-width: @desktop-width) {
   .features__message {
-    /* Временно для сетки */
     min-height: 405px;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -101,7 +99,7 @@
   background-color: #f2f2f2;
   background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%2294.074%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M1200%200H0v94.074z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
-  background-size:  320px 35px;
+  background-size: 320px 35px;
 }
 
 @media (min-width: @tablet-width) {
@@ -119,17 +117,20 @@
     align-content: flex-start;
     margin-left: auto;
     margin-right: auto;
-    background-size:  660px 50px;
+    background-size: 660px 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features__list {
-    /* Временно для сетки */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     min-height: 610px;
     margin-top: -100px;
-    width: 1200px;
-    background-size:  1200px 90px;
+    width: 100%;
+    background-size: 100% 7.5vw;
   }
 }
 
@@ -146,8 +147,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -306,8 +305,6 @@
   .features__image {
     width: 940px;
     height: 301px;
-    margin-left: auto;
-    margin-right: auto;
     background-image:
       url("../img/iphone-screen-1-desktop@1x.png"),
       url("../img/iphone-screen-2-desktop@1x.png"),
@@ -328,7 +325,6 @@
 
 @media (min-width: @tablet-width) {
   .features__research {
-    /* Временно для сетки */
     min-height: 386px;
     display: flex;
   }
@@ -336,7 +332,6 @@
 
 @media (min-width: @desktop-width) {
   .features__research {
-    /* Временно для сетки */
     min-height: 429px;
     align-items: flex-start;
     padding-top: 15px;
@@ -468,6 +463,8 @@
   .features__slider {
     width: 1200px;
     min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 57px;
