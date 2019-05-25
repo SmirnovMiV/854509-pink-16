@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Сайт приложения Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
+  </head>
+  <body>
+    <svg style="display:none">
+      <symbol viewBox="0 0 17.5 14.663" id="icon-twitter">
+        <path fill="#d22856" fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"/>
+      </symbol>
+      <symbol viewBox="0 0 8.673 18.944" id="icon-facebook">
+        <path fill="#d22856" d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
+      </symbol>
+      <symbol viewBox="0 0 14.64 13.96" id="icon-youtube">
+        <path fill="#d22856" d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
+      </symbol>
+      <symbol viewBox="0 0 26.943 34.09" id="logo-Academy">
+        <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
+      </symbol>
+      <symbol viewBox="521.939 473.064 12.545 11.99"  id="icon-heart">
+        <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+      </symbol>
+      <symbol viewBox="0 0 298 345.097" id="chronometer-casing">
+        <path fill="#dedede" d="M264.568 102.055l5.355-5.355c7.717-7.717 9.124-18.938 3.126-24.935-5.997-5.997-17.217-4.59-24.934 3.127l-5.386 5.385C221.768 63.292 196.11 51.875 168 48.297v-9.583h7.658c10.914 0 19.843-8.711 19.843-19.357S186.573 0 175.659 0h-53.317C111.429 0 102.5 8.711 102.5 19.357s8.929 19.357 19.842 19.357H130v9.583C56.681 57.629 0 120.244 0 196.097c0 82.291 66.709 149 149 149 82.29 0 149-66.709 149-149 0-35.663-12.535-68.394-33.432-94.042zM149 306.264c-60.844 0-110.167-49.323-110.167-110.167S88.156 85.93 149 85.93c60.843 0 110.167 49.323 110.167 110.167S209.843 306.264 149 306.264z"/>
+      </symbol>
+      <symbol viewBox="22.5 69.048 253 253" id="chronometer-dial">
+        <path fill="#d22856" d="M149 69.048c-69.864 0-126.5 56.636-126.5 126.5s56.636 126.5 126.5 126.5 126.5-56.636 126.5-126.5c0-69.863-56.636-126.5-126.5-126.5zm0 237.216c-60.844 0-110.167-49.323-110.167-110.167S88.156 85.93 149 85.93c60.843 0 110.167 49.323 110.167 110.167S209.843 306.264 149 306.264z"/>
+      </symbol>
+      <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+        <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
+      </symbol>
+      <symbol id="icon-no">
+        <path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
+      </symbol>
+      <symbol id="icon-crop" viewBox="0 0 44 44">
+        <path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+      </symbol>
+      <symbol id="icon-fill" viewBox="0 0 48 43">
+        <path fill="none" d="M0 0h48v48H0V0z"/><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+      </symbol>
+      <symbol id="icon-contrast" viewBox="-35.422 -7.96 31.92 31.92">
+        <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
+      </symbol>
+    </svg>
+
+    <header class="page-header">
+      <div class="wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--top main-nav__item--top-menu">
+              <div class="main-nav__item-wrapper">
+                <a class="main-nav__logo-link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта Пинк">
+                  </picture>
+                </a>
+                <button type="button" class="main-nav__toggle" aria-label="Переключатель состояния меню">Открыть меню</button>
+              </div>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Пинк - раскрась серые будни в розовый цвет!</h1>
+      <section class="application-download">
+        <div class="application-download__image"></div>
+        <div class="application-download__menu">
+          <div class="application-download__menu-wrapper">
+            <h2 class="application-download__menu-heading">Взгляните на жизнь иначе!</h2>
+            <a href="https://itunes.apple.com/ru/store" class="application-download__link" target="blank">Скачать приложение</a>
+            <ul class="application-download__icons-list">
+              <li class="application-download__icon">
+                <a href="https://itunes.apple.com/ru/store" target="blank" aria-label="Открыть Apple Store">
+                  <img src="img/logo-apple.svg" width="46" height="56" alt="Иконка Эпл">
+                </a>
+              </li>
+              <li class="application-download__icon">
+                <a href="https://play.google.com/store" target="blank"  aria-label="Открыть Android Market">
+                  <img src="img/logo-android.svg" width="43" height="47" alt="Иконка Андройд">
+                </a>
+              </li>
+              <li class="application-download__icon">
+                <a href="https://www.microsoft.com/ru-RU/store/apps" target="blank"  aria-label="Открыть Windows Store">
+                  <img src="img/logo-microsoft.svg" width="44" height="43" alt="Иконка Виндовс">
+                </a>
+              </li>
+            </ul>
+            <p class="application-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__message">
+          <p class="features__message-text">Устали от серости мегаполиса?</p>
+          <p class="features__message-text features__message-text--compressed">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="features__list">
+          <ul class="features__list-wrapper">
+            <li class="features__item">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Поднимает настроение</h3>
+                <p class="features__item-text">Приложение позволит вам победить <br>осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Меняет мир вокруг</h3>
+                <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__item-wrapper">
+                <h3 class="features__item-title">Заводит новых друзей</h3>
+                <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
+            </li>
+          </ul>
+          <div class="features__image"></div>
+        </div>
+        <div class="features__research">
+          <div class="features__research-wrapper">
+            <div class="features__research-picture chronometer">24
+              <svg class="chronometer__casing" width="238" height="276"><use xlink:href="#chronometer-casing"></use></svg>
+              <svg class="chronometer__dial" width="202" height="202"><use xlink:href="#chronometer-dial"></use></svg>
+            </div>
+            <div class="features__research-results">
+              <h3 class="features__research-heading">Эффект<br> на 24 часа!</h3>
+              <p class="features__research-text">Британские ученые провели исследования<br> и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
+              <a class="features__research-link">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
+        <div class="features__slider">
+          <div class="features__slider-wrapper">
+            <cite>Николай Петров<span>25 лет, водитель трамвая</span></cite>
+            <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            <div class="features__slider-buttons slider-buttons">
+              <button class="slider-buttons__button slider-buttons__button--active" type="button" name="button-1"></button>
+              <button type="button" name="button-2"></button>
+              <button type="button" name="button-3"></button>
+            </div>
+            <div class="features__slider-arrows">
+              <button type="button" name="arrow-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path fill="#283645" d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></svg>
+              </button>
+              <button type="button" name="arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path fill="#283645" d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price-list">
+        <h2 class="visually-hidden">Выберите подходящий тарифный план</h2>
+        <div class="price-list__table">
+          <div class="price-list__content">
+            <div class="price-list__column price-list__column-1"></div>
+            <div class="price-list__column price-list__column-2"></div>
+            <div class="price-list__column price-list__column-3"></div>
+            <div class="price-list__column price-list__column-4"></div>
+            <ul class="price-list__column-caption">
+              <li></li>
+              <li>База<span>1,99 USD</span></li>
+              <li class="price-list__column-caption price-list__column-caption--hit">Стандарт<span>3,99 USD</span></li>
+              <li>Анлим<span>9,99 USD</span></li>
+            </ul>
+            <div class="price-list__content-group">
+              <ul>
+                <li>Розовый фильтр</li>
+                <li>Розовый фильтр<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li>Розовый фильтр<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li>Розовый фильтр<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+              <ul>
+                <li>Смайлики</li>
+                <li>Смайлики<svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></use></svg></li>
+                <li>Смайлики<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+                <li>Смайлики<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+              <ul>
+                <li>Комментарии</li>
+                <li>Комментарии<svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></use></svg></li>
+                <li>Комментарии<svg class="price-list__icon-no price-list__icon-no--orange" width="27" height="27"><use xlink:href="#icon-no"></use></svg></li>
+                <li>Комментарии<svg class="price-list__icon-yes price-list__icon-yes--green" width="31" height="21"><use xlink:href="#icon-yes"></use></svg></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-list__slider-buttons slider-buttons">
+          <button type="button" name="button-1"></button>
+          <button class="slider-buttons__button slider-buttons__button--active" type="button" name="button-2"></button>
+          <button type="button" name="button-3"></button>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Всегда рады общению!</h2>
+        <div class="contacts__content-wrapper">
+          <p class="contacts__intro">Остались вопросы?Свяжитесь с нами!</p>
+          <p class="contacts__call">Звоните:<span>+7 (812) 555-66-66</span></p>
+          <p class="contacts__write">Пишите:<span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span></p>
+          <p class="contacts__come">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></p>
+        </div>
+        <div class="contacts__map-wrapper">
+          <iframe class="contacts__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7432954416145!2d30.320021272654667!3d59.93886365803539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557412280620!5m2!1sru!2sru" style="border:0" allowfullscreen aria-label="Интерактивная карта"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--hide">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          </picture>
+        </a>
+        <ul class="page-footer__social social">
+          <li>
+            <a class="social__link social__link--twitter" href="#">Твитер
+              <svg width="17.5" height="14.663"><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--facebook" href="#">Фейсбук
+              <svg width="8.673" height="18.944"><use xlink:href="#icon-facebook"></use></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link social__link--youtube" href="#">Ютуб
+              <svg width="14.64" height="13.96"><use xlink:href="#icon-youtube"></use></svg>
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Перейти на страницу курса HTML и CSS, уровень 2">
+            <svg width="26.943" height="34.09"><use xlink:href="#logo-Academy"></use></svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav__list');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.add('main-nav__list--menu-close');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav__list--menu-close')) {
+          navMain.classList.remove('main-nav__list--menu-close');
+          navMain.classList.add('main-nav__list--menu-opened');
+        } else {
+          navMain.classList.add('main-nav__list--menu-close');
+          navMain.classList.remove('main-nav__list--menu-opened');
+        }
+      });
+    </script>
+  </body>
+</html>

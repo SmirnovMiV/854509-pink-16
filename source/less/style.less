@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+@import "variables.less";
+@import "mixins.less";
+@import "support.less";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #ffffff;
+}
+
+@import "blocks/main-nav.less";
+@import "blocks/application-download.less";
+@import "blocks/features.less";
+@import "blocks/chronometer.less";
+@import "blocks/price-list.less";
+@import "blocks/slider-buttons.less";
+@import "blocks/contacts.less";
+@import "blocks/photo.less";
+@import "blocks/photo-post.less";
+@import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/contest.less";
+@import "blocks/popup.less";

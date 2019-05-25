@@ -1,0 +1,30 @@
+.slider-buttons button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin-right: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #283645;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.slider-buttons button:focus,
+.slider-buttons button:hover {
+  opacity: 0.6;
+}
+
+.slider-buttons button:active {
+  opacity: 0.1;
+}
+
+.slider-buttons .slider-buttons__button--active {
+  opacity: 1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px #283645;
+}
+
+.slider-buttons button:last-child {
+  margin-right: 0;
+}

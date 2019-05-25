@@ -1,0 +1,245 @@
+.price-list {
+  width: 320px;
+  min-height: 375px;
+  padding-top: 90px;
+  .centerman();
+  background-color: #f2f2f2;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%2294.074%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M1200%200H0v94.074z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 320px 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .price-list {
+    width: 660px;
+    min-height: 290px;
+    background-size: 660px 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-list {
+    width: 100%;
+    min-height: 380px;
+    padding-top: 145px;
+    background-size: 100% 7.5vw;
+  }
+}
+
+.price-list-table {
+  display: table;
+}
+
+.price-list__content {
+  width: 1090px;
+  margin-left: -513px;
+}
+
+@media (min-width: @tablet-width) {
+  .price-list__content {
+    width: 620px;
+    .centerman();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-list__content {
+    width: 940px;
+  }
+}
+
+.price-list ul {
+  .reset-list();
+}
+
+.price-list li {
+  .reset-list();
+}
+
+.price-list__column-caption {
+  display: table-caption;
+  text-align: center;
+}
+
+.price-list__column-caption li:not(:first-child) {
+  width: 295px;
+  height: 98px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #ffffff;
+  border-right: 2px solid #ffffff;
+  background-color: #283645;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    height: 75px;
+    padding-left: 0;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+    height: 98px;
+    font-size: 18px;
+  }
+}
+
+.price-list__column-caption li:last-child {
+  border-right: none;
+}
+
+.price-list__column-caption--hit {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.price-list__column-caption--hit::before {
+  content: "Хит";
+  position: absolute;
+  left: 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21.21px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+  @media (min-width: @desktop-width) {
+    font-size: 15px;
+    left: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .price-list__column-caption--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-list__column-caption--hit {
+    background-image: url("../img/bg-hit.svg");
+  }
+}
+
+.price-list__column-caption span {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.price-list__content ul {
+  display: table-row;
+}
+
+.price-list__content li {
+  display: table-cell;
+  color: #283645;
+  line-height: 30px;
+}
+
+.price-list__content li:not(:first-child) {
+  padding-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
+}
+
+.price-list__column {
+  display: table-column;
+}
+
+.price-list__icon-yes--green {
+  fill: #3dc644;
+}
+
+.price-list__icon-no--orange {
+  fill: #f25b26;
+}
+
+.price-list__content-group {
+  display: table-row-group;
+}
+
+.price-list__content-group li {
+  width: 280px;
+  height: 60px;
+  border: 2px solid #e5e5e5;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  vertical-align: middle;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    height: 45px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+    height: 61px;
+  }
+}
+
+.price-list__content-group li:first-child {
+  text-align: left;
+  padding-left: 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+}
+
+.price-list__content-group li:not(:first-child) {
+  position: relative;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    box-sizing: content-box;
+  }
+}
+
+.price-list__content-group svg {
+  position: absolute;
+  right: 17px;
+
+  @media (min-width: @tablet-width) {
+    position: inherit;
+    right: 0;
+  }
+}
+
+.price-list__slider-buttons {
+  text-align: center;
+  margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
